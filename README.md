@@ -23,7 +23,7 @@ The data markers reflect the magnitude of the earthquake in their size and color
 Popups provide additional information about the earthquake when a marker is clicked.
 
 
-### Level 2: More Data
+## Level 2: More Data
 
 The USGS requested a second data set on our map to illustrate the relationship between tectonic plates and seismic activity. 
 We pulled in a second data set on tectonic plates from https://github.com/fraxen/tectonicplates.
