@@ -9,13 +9,15 @@ function markerSize(magnitude) {
 // function to return the color based on magnitude
 function markerColor(magnitude) {
 if (magnitude > 4) {
-  return 'red'
+  return 'blue'
 } else if (magnitude > 3) {
-  return 'orange'
+  return 'red'
 } else if (magnitude > 2) {
-  return 'yellow'
-} else {
+  return 'orange'
+} else if (magnitude > 1) {
   return 'green'
+} else {
+  return 'yellow'
 }
 }
 
@@ -115,7 +117,7 @@ legend.onAdd = function (myMap) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 1, 2, 3, 4],
-        color = ['red', 'orange', 'yellow', 'green'];
+        color = ['yellow', 'green', 'orange', 'red', 'blue'];
       
 
     // loop through our density intervals and generate a label with a colored square for each interval
